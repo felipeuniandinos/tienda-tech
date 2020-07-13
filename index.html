@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Stellar by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/assetss/css/main.css" />
+		<noscript><link rel="stylesheet" href="../static/assetss/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<h1>Stellar</h1>
+						<p>Just another free, fully responsive site template<br />
+						built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Introduction</a></li>
+							<li><a href="#first">First Section</a></li>
+							<li><a href="#second">Second Section</a></li>
+							<li><a href="#cta">Get Started</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+
+
+
+					
+							
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+
+							{% for categoria in categorias %}
+
+							
+							<article class="style1">
+								<span class="image">
+									<img src="{{categoria.2}}" alt="" height="300px" width="300px"/>
+								</span>
+									<h2>{{categoria.3}}</h2>
+									<div class="content">
+										<p>{{categoria.0}}</p>
+										<ul class="actions">
+											<li><a href="/type_tech/{{categoria.3}}" class="button">ver productos</a></li>
+										</ul>
+									</div>
+								</a>
+							</article>
+							{% endfor %}
+
+						</section>
+						
+					</footer>
+				-->
+			</div>
+
+		<!-- Scripts -->
+			<script src="../static/assetss/js/jquery.min.js"></script>
+			<script src="../static/assetss/js/jquery.scrollex.min.js"></script>
+			<script src="../static/assetss/js/jquery.scrolly.min.js"></script>
+			<script src="../static/assetss/js/browser.min.js"></script>
+			<script src="../static/assetss/js/breakpoints.min.js"></script>
+			<script src="../static/assetss/js/util.js"></script>
+			<script src="../static/assetss/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Prologue by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/assetsi/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+							<div>
+								<div>
+								  <h3 class="card-title">CARRITO</h3>
+								</div>
+								<div class="card-body p-1">
+								  <div >
+									<table>
+									  <thead>
+									  <tr>
+										<th>Order ID</th>
+										<th>Item</th>
+										<th>articulo</th>
+										<th>peso</th>
+									  </tr>
+									  </thead>
+									  <tbody>
+										{% for comida in comidas %}		
+										<tr>
+										<td><a href="">{{comida.0}}</a></td>
+										<td>{{comida.1}}</td>
+										<td>{{comida.3}}</span></td>
+										<td>
+										  <div></div> {{comida.4}}Kg</div>
+										</td>
+										  </tr>
+										  {% endfor %}
+									 
+									  </tbody>
+									</table>
+								  </div>
+		
+								</div>
+		
+							  </div>
+							<header>
+								<h2>Portfolio</h2>
+							</header>
+
+							{% for producto in productos %}
+							
+							<article class="col-6 col-12-xsmall work-item">
+							
+								<a href="{{producto.2}}" class="image fit thumb" height="150px"><img src="{{producto.2}}" alt="" height="400px" width="150px"/></a>
+								<h3>{{producto.3}}</h3>
+								<p>Precio: ${{producto.5}} COP${{producto.5*cambio}} Peso:{{producto.4}}</p>
+								<a href="/comprar/{{producto.1}}/{{session['correo']}}">COMPRAR</a>
+							</article>
+							{% endfor %}
+						</div>
+
+					</section>
+	
+			</div>
+
+		<!-- Scripts -->
+			<script src="../static/assetsi/js/jquery.min.js"></script>
+			<script src="../static/assetsi/js/jquery.scrolly.min.js"></script>
+			<script src="../static/assetsi/js/jquery.scrollex.min.js"></script>
+			<script src="../static/assetsi/js/browser.min.js"></script>
+			<script src="../static/assetsi/js/breakpoints.min.js"></script>
+			<script src="../static/assetsi/js/util.js"></script>
+			<script src="../static/assetsi/js/main.js"></script>
+
+	</body>
+</html>
